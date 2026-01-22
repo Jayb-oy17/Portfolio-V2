@@ -8,21 +8,17 @@
 }
 
 :root {
-  /* Default to dark mode colors */
-  --background: #020617; /* Very dark slate */
-  --foreground: #f8fafc; /* Slate 50 */
-  --card-bg: #1e293b; /* Slate 800 */
-  --border-color: #334155; /* Slate 700 */
+  --background: #f8fafc; /* Slate 50 */
+  --foreground: #020617; /* Slate 950 */
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0; /* Slate 200 */
 }
 
-/* Light mode support if needed, but we focus on dark */
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #f8fafc;
-    --foreground: #020617;
-    --card-bg: #ffffff;
-    --border-color: #e2e8f0;
-  }
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+  --card-bg: #1e293b;
+  --border-color: #334155;
 }
 
 html {

@@ -12,7 +12,7 @@ const Hero = () => {
   const maskY = useTransform(scrollY, [0, 500], [0, 50]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 md:pt-10 overflow-hidden">
       {/* Noise Overlay */}
       <div className="noise-overlay" />
 
@@ -36,10 +36,10 @@ const Hero = () => {
           <h2 className="text-blue-500 font-mono text-xs tracking-widest mb-4 uppercase">
             Available for new opportunities
           </h2>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 dark:text-white">
             Hi, I&apos;m <span className="text-gradient">Abdullateef Mujahid</span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
             A Front End Web Developer specializing in user experience optimization, 
             responsive design, and visually stunning web applications.
           </p>
@@ -53,14 +53,14 @@ const Hero = () => {
             </Link>
             <Link 
               href="#contact"
-              className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-lg font-semibold transition-all backdrop-blur-sm"
+              className="w-full sm:w-auto px-8 py-4 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white rounded-lg font-semibold transition-all backdrop-blur-sm"
             >
               Contact Me
             </Link>
             <a 
               href="/resume.pdf" 
               download
-              className="w-full sm:w-auto px-8 py-4 border border-blue-500/30 text-blue-400 hover:bg-blue-500/10 rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-4 border border-blue-500/30 text-blue-600 dark:text-blue-400 hover:bg-blue-500/10 rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
             >
               <Download size={18} /> Resume
             </a>

@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -13,13 +14,15 @@ export const metadata = {
  */
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <body className="antialiased bg-slate-950 text-slate-50 selection:bg-blue-500/30">
-        <Navbar />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+    <html lang="en" suppressHydrationWarning>
+      <body className="antialiased selection:bg-blue-500/30 transition-colors duration-300">
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <Navbar />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

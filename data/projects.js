@@ -19,7 +19,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/Jayb-oy17/calculator",
     live: "https://calculator-seven-olive-92.vercel.app/",
-    image: "/projects/calculator.jpg"
+    image: "/projects/pro-3.png"
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/Jayb-oy17/Ilanding",
     live: "https://ilanding-rho.vercel.app/",
-    image: "/projects/landing.jpg"
+    image: "/projects/pro-4.png"
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "React"],
     github: "https://github.com/Jayb-oy17/Mentor",
     live: "https://mentor-tan.vercel.app/",
-    image: "/projects/mentor.jpg"
+    image: "/projects/pro-6.png"
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/Jayb-oy17/TodoList",
     live: "https://todo-list-xi-eosin.vercel.app/",
-    image: "/projects/todo.jpg"
+    image: "/projects/pro-9.png"
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "API"],
     github: "https://github.com/Jayb-oy17/Weather-App",
     live: "https://weather-app-mocha-six-50.vercel.app/",
-    image: "/projects/weather.jpg"
+    image: "/projects/pro-10.png"
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/Jayb-oy17/Yummy",
     live: "https://yummy-sooty.vercel.app/",
-    image: "/projects/yummy.jpg"
+    image: "/projects/pro-11.png"
   },
   {
     id: 7,
@@ -73,7 +73,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/Jayb-oy17/Medilab",
     live: null,
-    image: "/projects/medilab.jpg"
+    image: "/projects/pro-5.png"
   }
 ];
 

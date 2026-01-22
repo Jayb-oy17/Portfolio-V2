@@ -37,7 +37,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-slate-900/20 border-y border-white/5">
+      <section className="py-12 md:py-6 bg-slate-100/50 dark:bg-slate-900/20 border-y border-slate-200 dark:border-white/5">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -58,8 +58,8 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative py-32 px-6 overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-24 bg-slate-900 section-divider opacity-50 z-0 rotate-180" />
+      <section id="about" className="relative py-32 md:py-16 px-6 overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-24 bg-slate-200 dark:bg-slate-900 section-divider opacity-50 z-0 rotate-180" />
         
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
@@ -98,8 +98,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-slate-900/50 border border-white/10 rounded-2xl p-8 backdrop-blur-sm shadow-xl shadow-black/20">
-                <h3 className="text-xl font-bold mb-6 text-white uppercase tracking-widest text-xs">
+              <div className="bg-white/50 dark:bg-slate-900/50 border border-slate-200 dark:border-white/10 rounded-2xl p-8 backdrop-blur-sm shadow-xl shadow-black/5 dark:shadow-black/20">
+                <h3 className="text-xl font-bold mb-6 text-slate-900 dark:text-white uppercase tracking-widest text-xs">
                   Technical Arsenal
                 </h3>
                 <div className="flex flex-wrap gap-3">
@@ -111,7 +111,7 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.05 }}
                       whileHover={{ scale: 1.05, borderColor: "rgba(59, 130, 246, 0.5)" }}
-                      className="px-4 py-2 bg-slate-800/80 border border-white/5 rounded-lg text-xs text-slate-300 transition-all cursor-default"
+                      className="px-4 py-2 bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-white/5 rounded-lg text-xs text-slate-600 dark:text-slate-300 transition-all cursor-default"
                     >
                       {skill}
                     </motion.span>
@@ -124,7 +124,7 @@ export default function Home() {
       </section>
 
       {/* Featured Project Section */}
-      <section className="py-24 px-6 bg-slate-950">
+      <section className="py-24 md:py-12 px-6 bg-slate-50 dark:bg-slate-950">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -140,9 +140,9 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="group relative grid lg:grid-cols-2 gap-0 overflow-hidden rounded-3xl border border-white/10 bg-slate-900/50 hover:border-blue-500/30 transition-all duration-500"
+            className="group relative grid lg:grid-cols-2 gap-0 overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10 bg-white dark:bg-slate-900/50 hover:border-blue-500/30 transition-all duration-500"
           >
-            <div className="relative overflow-hidden aspect-video lg:aspect-auto bg-slate-800">
+            <div className="relative overflow-hidden aspect-video lg:aspect-auto bg-slate-100 dark:bg-slate-800">
                <div className="absolute inset-0 bg-linear-to-br from-blue-600/20 to-purple-600/20 mix-blend-overlay" />
                {featuredProject.image ? (
                  <img 
@@ -163,17 +163,17 @@ export default function Home() {
               
               <div className="grid gap-6 mb-8 text-sm">
                 <div>
-                  <h4 className="text-white font-bold mb-1 uppercase tracking-widest text-[10px]">The Challenge</h4>
-                  <p className="text-slate-400">{featuredProject.problem}</p>
+                  <h4 className="text-slate-900 dark:text-white font-bold mb-1 uppercase tracking-widest text-[10px]">The Challenge</h4>
+                  <p className="text-slate-500 dark:text-slate-400">{featuredProject.problem}</p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-1 uppercase tracking-widest text-[10px]">The Solution</h4>
-                  <p className="text-slate-400">{featuredProject.solution}</p>
+                  <h4 className="text-slate-900 dark:text-white font-bold mb-1 uppercase tracking-widest text-[10px]">The Solution</h4>
+                  <p className="text-slate-500 dark:text-slate-400">{featuredProject.solution}</p>
                 </div>
                 <div className="flex gap-8">
                   <div>
-                    <h4 className="text-white font-bold mb-1 uppercase tracking-widest text-[10px]">Tech Choice</h4>
-                    <p className="text-slate-400">{featuredProject.techChoices}</p>
+                    <h4 className="text-slate-900 dark:text-white font-bold mb-1 uppercase tracking-widest text-[10px]">Tech Choice</h4>
+                    <p className="text-slate-500 dark:text-slate-400">{featuredProject.techChoices}</p>
                   </div>
                 </div>
                 <div>
@@ -198,7 +198,7 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-32 px-6 bg-slate-900/30">
+      <section id="experience" className="py-32 md:py-16 px-6 bg-slate-50 dark:bg-slate-900/30">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -227,12 +227,12 @@ export default function Home() {
                   <div className="absolute left-0 md:left-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-slate-950 z-10 -translate-x-1/2 shadow-[0_0_15px_rgba(37,99,235,0.5)]" />
 
                   {/* Content Card */}
-                  <div className={`w-full md:w-[45%] p-6 rounded-2xl bg-slate-900/50 border border-white/5 shadow-xl ${index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"}`}>
-                    <div className="flex items-center gap-3 text-blue-400 mb-2">
+                  <div className={`w-full md:w-[45%] p-6 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-white/5 shadow-xl ${index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"}`}>
+                    <div className="flex items-center gap-3 text-blue-500 mb-2">
                       <Briefcase size={16} />
                       <span className="text-xs font-mono uppercase tracking-widest">{exp.period}</span>
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-1">{exp.role}</h3>
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-1">{exp.role}</h3>
                     <p className="text-slate-500 font-medium mb-4">{exp.company}</p>
                     <ul className="space-y-3">
                       {exp.achievements.map((achievement, i) => (
@@ -251,7 +251,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-32 px-6">
+      <section id="projects" className="py-32 md:py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0 }}
@@ -276,7 +276,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 px-6 relative overflow-hidden">
+      <section id="contact" className="py-32 md:py-16 px-6 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-24 bg-slate-900 section-divider opacity-50 z-0" />
         
         <div className="max-w-3xl mx-auto text-center relative z-10">
@@ -308,32 +308,32 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="bg-slate-900/40 border border-white/5 rounded-3xl p-8 md:p-12 backdrop-blur-sm shadow-2xl shadow-black/40">
-              <h3 className="text-2xl font-bold mb-8">Send a Message</h3>
+            <div className="bg-white/50 dark:bg-slate-900/40 border border-slate-200 dark:border-white/5 rounded-3xl p-8 md:p-12 backdrop-blur-sm shadow-2xl shadow-black/5 dark:shadow-black/40">
+              <h3 className="text-2xl font-bold mb-8 text-slate-900 dark:text-white">Send a Message</h3>
               <form className="space-y-6 text-left" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-[10px] font-mono uppercase text-slate-500 ml-1">Name</label>
+                    <label className="text-[10px] font-mono uppercase text-slate-400 dark:text-slate-500 ml-1">Name</label>
                     <input 
                       type="text" 
-                      className="w-full bg-slate-950/50 border border-white/10 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition-colors"
+                      className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 focus:border-blue-500 text-slate-900 dark:text-white outline-none transition-colors"
                       placeholder="John Doe"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-[10px] font-mono uppercase text-slate-500 ml-1">Email</label>
+                    <label className="text-[10px] font-mono uppercase text-slate-400 dark:text-slate-500 ml-1">Email</label>
                     <input 
                       type="email" 
-                      className="w-full bg-slate-950/50 border border-white/10 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition-colors"
+                      className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 focus:border-blue-500 text-slate-900 dark:text-white outline-none transition-colors"
                       placeholder="john@example.com"
                     />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[10px] font-mono uppercase text-slate-500 ml-1">Message</label>
+                  <label className="text-[10px] font-mono uppercase text-slate-400 dark:text-slate-500 ml-1">Message</label>
                   <textarea 
                     rows="4"
-                    className="w-full bg-slate-950/50 border border-white/10 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition-colors resize-none"
+                    className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 focus:border-blue-500 text-slate-900 dark:text-white outline-none transition-colors resize-none"
                     placeholder="How can I help you?"
                   />
                 </div>
